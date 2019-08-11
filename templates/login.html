@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<title>Login page</title>
+</head>
+<body>
+<div class="row" style="padding: 2% 0% 0% 1%;">
+<div class="col-md-6">	
+<h6>Please provide your credentials:</h6>
+</div>
+</div>	
+<div class="row" style="padding: 1% 2%;">
+<div class="col-md-6">	
+<form action="" method="post">
+  Email:<br>
+  <input type="Email" name="email">
+  <br>
+  Password:<br>
+  <input type="Password" name="password">
+  <br><br>
+  <input type="submit" value="Submit">	
+</form>
+<a href="/reset_password" style="text-decoration-line: none;">Forgot your password</a>
+{% if error %}
+<p class="error"><strong>Error:</strong> {{ error }}</p>
+{% endif %}
+</div>
+<div class="col-md-6">
+<p>Features</p>
+<ul>
+<li><a href="/upload">upload a file</a></li>
+<li><a href="/mean_filter">Try this api to check if a word is offensive or not</a></li>
+<li><a href="/info">Browser Info</a></li>	
+</ul>	
+</div>
+</div>
+</body>
+</html>
